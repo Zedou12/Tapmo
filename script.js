@@ -54,7 +54,7 @@ function lancerJeu (mode){
     btnValider.addEventListener('click', valider);
     //Quand on appuie sur Entree
     const inputJoueur1 = document.getElementById("champJoueur");
-    inputJoueur1.focus();
+    //inputJoueur1.focus();
     
     if(listener === false){                                      //check si un listener est déjà présent
         inputJoueur1.addEventListener("keydown", (event) => {
