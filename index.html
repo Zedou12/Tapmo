@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAPMO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div id="jeu" class="jeu">
+        <div id="start">
+            <h1>BONJOUR</h1> <br>
+            Choisissez le mode <br>
+            <label>
+                <input type="radio" id="mots" name="choixMode" value="1" checked>
+                MOTS
+            </label>
+            <label>
+                <input type="radio" id="phrases" name="choixMode" value="2">
+                PHRASES
+            </label>
+        
+            <br>
+            <button type="button" id="btnJouer" name="btnJouer" class="btnJouer">JOUER</button>
+        </div>
+        <div id="game">
+            <h2>
+            Tapez <span id="spanMode">le mot suivant :</span> 
+            </h2>
+            <h3 id="prop">
+                PROPOSITION
+            </h3>
+            <input type="text" id="champJoueur" name="champJoueur" class="inputJoueur">
+            <br>
+            <button type="button" id="btnValider" name="btnValider" class="btnValider">VALIDER</button>
+
+            <div id="zoneScore" class="zoneScore">
+                SCORE : <span id="points">12</span> / <span id="total">12</span>
+            </div>
+        </div>
+        <div id="rejouer">
+            
+        </div>
+        <div id ="scoreFinal" class="scoreFinal">
+            TERMINE ! <br>
+            VOTRE SCORE : <br>
+            <span id="nbScoreFinal">Gah</span> / <span id="totalFinal">nié</span>
+            <br>
+            <button type="button" id="btnRejouer" name="btnRejouer" class="btnRejouer">REJOUER</button>
+            
+        </div>
+    
+        
+    </div>
+    
+</body>
+</html>
